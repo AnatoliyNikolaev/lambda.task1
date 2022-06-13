@@ -5,7 +5,8 @@ public class Calculator {
     BinaryOperator<Integer> plus = (x, y) -> x + y;
     BinaryOperator<Integer> minus = (x, y) -> x - y;
     BinaryOperator<Integer> multiply = (x, y) -> x * y;
-    BinaryOperator<Integer> devide = (x, y) -> y == 0 ? y : x / y;
+    BinaryOperator<Integer> devide = (x, y) -> y == 0 ? 0 : x / y;//ошибка возникает при делении на ноль
+    //как вариант решения необходимо проверить "y" и если он равен нулю то вернуть нужное значение (я вернул 0)
     UnaryOperator<Integer> pow = x -> x * x;
 
     /*Реализация функционального интерфейса не вызывает ошибку*/
