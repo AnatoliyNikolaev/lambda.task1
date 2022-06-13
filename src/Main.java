@@ -9,8 +9,7 @@ public class Main {
         int d = calc.multiply.apply(a, b);
         int e = calc.pow.apply(b);
         int f = calc.abs.apply(b1);
-
-
+        
         calc.println.accept(f);
         System.out.println("isPositive = " + calc.isPositive.test(b));
         System.out.println("a = " + a);
